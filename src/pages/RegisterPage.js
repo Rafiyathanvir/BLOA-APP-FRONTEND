@@ -5,7 +5,7 @@ export default function RegisterPage() {
   const [password, setPassword] = useState('');
   async function register(ev) {
     ev.preventDefault();
-    const response = await fetch('https://blog-app-ycfd.onrender.com/register', {
+    const response = await fetch('https://blog-app-up.onrender.com/register', {
       method: 'POST',
       body: JSON.stringify({username,password}),
       headers: {'Content-Type':'application/json'},
