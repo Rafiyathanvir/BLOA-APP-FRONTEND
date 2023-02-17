@@ -9,7 +9,7 @@ export default function LoginPage() {
   const {setUserInfo} = useContext(UserContext);
   async function login(ev) {
     ev.preventDefault();
-    const response = await fetch('https://blog-app-ycfd.onrender.com/login', {
+    const response = await fetch('https://blog-app-up.onrender.com/login', {
       method: 'POST',
       body: JSON.stringify({username, password}),
       headers: {'Content-Type':'application/json'},
